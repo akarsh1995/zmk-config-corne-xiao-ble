@@ -8,7 +8,7 @@
 / {
     chosen {
       zmk,kscan = &kscan0;
-      zmk,matrix_transform = &corny_6col_layout;
+      zmk,physical-layout = &corny_6col_layout;
     };
 
     default_transform: keymap_transform_0 {
