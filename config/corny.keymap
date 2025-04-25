@@ -12,6 +12,15 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_studio_unlock {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&studio_unlock>;
+        };
+    };
+
     behaviors {
         td_mo_1: td_mo_1 {
             compatible = "zmk,behavior-tap-dance";
