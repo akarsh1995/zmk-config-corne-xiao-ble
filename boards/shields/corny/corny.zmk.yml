@@ -1,0 +1,13 @@
+file_format: "2"
+id: corne
+name: White Corne MX
+type: shield
+url: https://github.com/akarsh1995/zmk-config-corne-xiao-ble
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+  - encoder
+  - studio
+siblings:
+  - corny_left
+  - corny_right

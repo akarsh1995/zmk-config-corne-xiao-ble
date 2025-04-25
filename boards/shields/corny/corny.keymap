@@ -3,10 +3,20 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+        combos {
+                compatible = "zmk,combos";
+                combo_studio_unlock {
+                        timeout-ms = <50>;
+                        key-positions = <0 1>;
+                        bindings = <&studio_unlock>;
+                };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
+                display-name = "default_layer";
 // -------------------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |                    |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |                    |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -22,6 +32,7 @@
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
                 lower_layer {
+                display-name = "lower_layer";
 // ------------------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |                    |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |                    | LFT | DWN |  UP | RGT |     |  F12 |
@@ -38,6 +49,7 @@
                 };
 
                 raise_layer {
+                display-name = "raise_layer";
 // ------------------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |                    |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL |     |     |     |     |     |                    |  -  |  =  |  [  |  ]  |  \  |  `   |
