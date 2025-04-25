@@ -1,8 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <layouts/corny/6column.dtsi>
 
-&xiao_serial { status = "disabled"; };
-
 &corny_6col_layout {
     transform = <&default_transform>;
 };
